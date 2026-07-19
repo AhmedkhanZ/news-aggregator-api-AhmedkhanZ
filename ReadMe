@@ -1,0 +1,50 @@
+## News Aggregator API
+
+## Description:-
+A RESTful News Aggregator API built with Node.js and Express.js that allows users to register, authenticate using JWT, manage their news preferences, and fetch personalized news articles.
+
+## WorkFlow of Application:-
+Client
+    │
+    ▼
+Login
+    │
+    ▼
+JWT Generated
+    │
+    ▼
+Authorization: Bearer <token>/Cookier - Works on both scenarios
+    │
+    ▼
+Authentication Middleware
+    │
+    ▼
+User Preferences
+    │
+    ▼
+External News API
+    │
+    ▼
+Personalized News Response
+
+
+## Installation
+
+1. Clone the repository
+
+git clone <repository-url>
+
+2. Install dependencies
+
+npm install
+
+3. Create a .env file
+
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+API_KEY=your_news_api_key
+
+4. Start the server
+
+npm run dev
